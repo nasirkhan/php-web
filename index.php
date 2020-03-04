@@ -1,9 +1,9 @@
 <?php
-// print_r($_GET);
+// print_r($_POST);
 
-$number_1 = $_GET['number_1'];
-$number_2 = $_GET['number_2'];
-$calculation = $_GET['calculation'];
+$number_1 = $_POST['number_1'];
+$number_2 = $_POST['number_2'];
+$calculation = $_POST['calculation'];
 $total = 0;
 
 switch ($calculation) {
@@ -35,11 +35,11 @@ switch ($calculation) {
     <body>
         <div class="container">
             <div class="row justify-content-center mt-5">
-                <div class="col-6 align-self-center">
+                <div class="col-12 col-sm-6 align-self-center">
                     <div class="card">
                         <div class="card-body">
                             <h1 class="text-center">Calculator</h1>
-                            <form>
+                            <form method="POST" action="index.php">
                                 <div class="form-group">
                                     <label for="number_1">Number 1</label>
                                     <input type="text" class="form-control" name="number_1" value="<?php echo $number_1; ?>">

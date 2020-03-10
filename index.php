@@ -88,6 +88,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
+                            <br>
+                            You are using <?php echo $_SERVER['HTTP_USER_AGENT']; ?>.
                         </div>
                     </div>
                 </div>

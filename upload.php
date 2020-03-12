@@ -51,7 +51,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 <!doctype html>
 <html lang="en">
 <head>
-    <?php include "_header.php" ?>
+    <?php require_once "_header.php" ?>
 
     <title>Calculator</title>
 </head>
@@ -78,7 +78,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <input type="file" name="file_field" id="file_field">
                             </div>
 
-
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
@@ -86,6 +85,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </div>
-    <?php include "_footer.php" ?>
+    <?php include_once "_footer.php" ?>
 </body>
 </html>

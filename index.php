@@ -42,7 +42,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 <!doctype html>
 <html lang="en">
     <head>
-        <?php include "_header.php" ?>
+        <?php require_once "_header.php" ?>
 
         <title>Calculator</title>
     </head>
@@ -90,6 +90,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             </div>
         </div>
-        <?php include "_footer.php" ?>
+        <?php include_once "_footer.php" ?>
     </body>
 </html>

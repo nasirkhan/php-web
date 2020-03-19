@@ -11,6 +11,7 @@ setcookie($cookie_name, $cookie_value, time() + (60 * 60 * 24 * 30), "/"); // 60
         <title>Cookies</title>
     </head>
     <body>
+        <?php require_once "_navbar.php" ?>
         <div class="container">
             <div class="row justify-content-center mt-5">
                 <div class="col-12 col-sm-6 align-self-center">

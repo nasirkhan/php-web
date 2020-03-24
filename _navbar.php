@@ -21,6 +21,7 @@
                         <a class="dropdown-item" href="cookies.php">Cookies</a>
                         <a class="dropdown-item" href="session.php">Session</a>
                         <a class="dropdown-item" href="filter.php">Filter</a>
+                        <a class="dropdown-item" href="mail.php">Mail</a>
                     </div>
                 </li>
             </ul>

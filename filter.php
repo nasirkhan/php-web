@@ -59,7 +59,7 @@ session_start();
                                     return $value;
                                 }
                             }
-                            $var = filter_var('Doe, Jane Sue', FILTER_CALLBACK, array('options' => 'foo'));
+                            $var = filter_var('Nasir, Khan Saikat', FILTER_CALLBACK, array('options' => 'foo'));
                             ?>
 
                             <hr>
@@ -71,7 +71,7 @@ session_start();
                             <?php
                             error_reporting(E_ALL | E_STRICT);
                             $data = [
-                                'product_id' => 'libgd<script>',
+                                'product_id' => 'Bangla<script>',
                                 'component' => '10',
                                 'versions' => '2.0.33',
                                 'testscalar' => array('2', '23', '10', '12'),

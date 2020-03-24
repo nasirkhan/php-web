@@ -64,7 +64,7 @@ session_start();
 
                             <hr>
                             <h3>
-                                filter_list()
+                                filter_var_array()
                             </h3>
                             <hr>
 
@@ -77,8 +77,6 @@ session_start();
                                 'testscalar' => array('2', '23', '10', '12'),
                                 'testarray' => '2',
                             ];
-                            print_r($data);
-                            print_r('<br>');
 
                             $args = [
                                 'product_id' => FILTER_SANITIZE_ENCODED,
@@ -100,10 +98,53 @@ session_start();
                             ];
 
                             $result = filter_var_array($data, $args);
-
-                            var_dump($result);
-                            echo "\n";
                             ?>
+
+                            <pre class="text-left"><?php var_dump($result); ?></pre>
+
+                            <hr>
+                            <h3>
+                                String Sanitization
+                            </h3>
+                            <?php
+                            $str = "<h1>Hello World!</h1>";
+                            $newstr = filter_var($str, FILTER_SANITIZE_STRING);
+                            echo $newstr;
+                            ?>
+
+
+                            <hr>
+                            <h3>
+                                Filter Integer
+                            </h3>
+                            <?php
+                            $int = 0;
+
+                            if (filter_var($int, FILTER_VALIDATE_INT) === 0 || !filter_var($int, FILTER_VALIDATE_INT) === false) {
+                                echo("Integer is valid");
+                            } else {
+                                echo("Integer is not valid");
+                            }
+                            ?>
+                            <hr>
+                            <h3>
+                                Sanitize and Validate an Email Address
+                            </h3>
+                            <?php
+                            $email = "nasir@example.com";
+
+                            // Remove all illegal characters from email
+                            $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+
+                            // Validate e-mail
+                            if (!filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+                                echo("$email is a valid email address");
+                            } else {
+                                echo("$email is not a valid email address");
+                            }
+                            ?>
+
+
 
                             <hr>
                             <h3>

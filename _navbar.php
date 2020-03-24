@@ -20,6 +20,7 @@
                         <a class="dropdown-item" href="upload.php">Upload</a>
                         <a class="dropdown-item" href="cookies.php">Cookies</a>
                         <a class="dropdown-item" href="session.php">Session</a>
+                        <a class="dropdown-item" href="filter.php">Filter</a>
                     </div>
                 </li>
             </ul>

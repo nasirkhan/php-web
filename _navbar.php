@@ -22,6 +22,7 @@
                         <a class="dropdown-item" href="session.php">Session</a>
                         <a class="dropdown-item" href="filter.php">Filter</a>
                         <a class="dropdown-item" href="mail.php">Mail</a>
+                        <a class="dropdown-item" href="regex.php">RegExp</a>
                     </div>
                 </li>
             </ul>

@@ -7,7 +7,7 @@ session_start();
     <head>
         <?php require_once "_header.php" ?>
 
-        <title>RegExp - Regular expression</title>
+        <title>RegExp - Regular Expression</title>
     </head>
     <body>
         <?php require_once "_navbar.php" ?>
@@ -16,7 +16,7 @@ session_start();
                 <div class="col-12 col-sm-6 align-self-center">
                     <div class="card">
                         <div class="card-body text-center">
-                            <h1>RegExp - Regular expression</h1>
+                            <h1>RegExp - Regular Expression</h1>
                             <hr>
                             <h3>
                                 preg_match()

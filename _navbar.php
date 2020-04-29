@@ -26,6 +26,14 @@
                         <a class="dropdown-item" href="regex.php">RegExp</a>
                     </div>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDatabase" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Database
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDatabase">
+                        <a class="dropdown-item" href="mysql_connect_example.php">Connect</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>

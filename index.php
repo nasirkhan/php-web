@@ -22,7 +22,7 @@
 
                             <div class="row mb-4">
                                 <div class="col-4">
-                                    <a class="btn btn-outline-primary btn-block" href="#">Connect</a>
+                                    <a class="btn btn-outline-primary btn-block" href="mysql_connect_example.php">Connect</a>
                                 </div>
                                 <div class="col-4">
                                     <a class="btn btn-outline-primary btn-block" href="#">Insert</a>

@@ -17,6 +17,7 @@
                         Features
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="calculator.php">Calculator</a>
                         <a class="dropdown-item" href="upload.php">Upload</a>
                         <a class="dropdown-item" href="cookies.php">Cookies</a>
                         <a class="dropdown-item" href="session.php">Session</a>

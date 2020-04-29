@@ -1,50 +1,9 @@
-<?php
-// print_r($_POST);
-
-if($_SERVER["REQUEST_METHOD"] == "POST") {
-    $number_1 = filter_var($_POST['number_1'], FILTER_VALIDATE_FLOAT);
-    $number_2 = filter_var($_POST['number_2'], FILTER_VALIDATE_FLOAT);
-
-    if ($_POST['number_1'] != '' && $_POST['number_2'] != '' && $_POST['calculation'] != '') {
-        $calculation = $_POST['calculation'];
-        $total = 0;
-
-        switch ($calculation) {
-            case 'Addition':
-                $total = $number_1 + $number_2;
-                break;
-            case 'Subtraction':
-                $total = $number_1 - $number_2;
-                break;
-            case 'Multiplication':
-                $total = $number_1 * $number_2;
-                break;
-            case 'Division':
-                if ($number_2 == 0) {
-                    $total = "Undefined";
-                    $error = "Devide by 0 is undefined!";
-                }
-                else {
-                    $total = $number_1 / $number_2;
-                }
-                break;
-            default:
-                $error = "Something went wrong!";
-        }
-    }
-    else {
-        $error = "All fields are required!";
-    }
-}
-
-?>
-
 <!doctype html>
 <html lang="en">
     <head>
         <?php require_once "_header.php" ?>
 
-        <title>Calculator</title>
+        <title>PHP Project</title>
     </head>
     <body>
         <?php require_once "_navbar.php" ?>
@@ -54,39 +13,73 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="col-12 col-sm-6 align-self-center">
                     <div class="card">
                         <div class="card-body">
-                            <h1 class="text-center">Calculator</h1>
-                            <?php if($error!=''): ?>
-                            <div class="alert alert-warning text-center">
-                                <?php echo $error; ?>
+                            <h1 class="text-center">PHP</h1>
+
+                            <hr>
+                            <h3 class="text-center">
+                                Database
+                            </h3>
+
+                            <div class="row mb-4">
+                                <div class="col-4">
+                                    <a class="btn btn-outline-primary btn-block" href="#">Connect</a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="btn btn-outline-primary btn-block" href="#">Insert</a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="btn btn-outline-primary btn-block" href="#">Prepared</a>
+                                </div>
                             </div>
-                            <?php endif; ?>
-                            <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-                                <div class="form-group">
-                                    <label for="number_1">Number 1</label>
-                                    <input type="number" class="form-control" name="number_1" value="<?php echo $number_1; ?>" required>
+                            <!-- <div class="row mb-4">
+                                <div class="col-4">
+                                    <a class="btn btn-outline-primary btn-block" href="#">Select</a>
                                 </div>
-                                <div class="form-group">
-                                    <label for="number_2">Number 2</label>
-                                    <input type="number" class="form-control" name="number_2" value="<?php echo $number_2; ?>" required>
+                                <div class="col-4">
+                                    <a class="btn btn-outline-primary btn-block" href="#">Update</a>
                                 </div>
-                                <div class="form-group">
-                                    <label for="calculation">Calculation</label>
-                                    <select class="custom-select" name="calculation" required>
-                                        <option selected>Please Select</option>
-                                        <option value="Addition" <?php echo ($calculation == 'Addition')? 'Selected' : ''; ?>>Addition (+)</option>
-                                        <option value="Subtraction" <?php echo ($calculation == 'Subtraction')? 'Selected' : ''; ?>>Subtraction (-)</option>
-                                        <option value="Multiplication" <?php echo ($calculation == 'Multiplication')? 'Selected' : ''; ?>>Multiplication (*)</option>
-                                        <option value="Division" <?php echo ($calculation == 'Division')? 'Selected' : ''; ?>>Division (/)</option>
-                                    </select>
+                                <div class="col-4">
+                                    <a class="btn btn-outline-primary btn-block" href="#">Delete</a>
                                 </div>
+                            </div> -->
 
-                                <div class="form-group">
-                                    <label for="total">Total</label>
-                                    <input type="text" class="form-control" name="total" value="<?php echo $total; ?>" disabled>
-                                </div>
+                            <h3 class="text-center">
+                                Features
+                            </h3>
 
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
+                            <div class="row mb-4">
+                                <div class="col-4">
+                                    <a class="btn btn-outline-primary btn-block" href="calculator.php">Calculator</a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="btn btn-outline-primary btn-block" href="upload.php">Upload</a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="btn btn-outline-primary btn-block" href="cookies.php">Cookies</a>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-4">
+                                    <a class="btn btn-outline-primary btn-block" href="session.php">Session</a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="btn btn-outline-primary btn-block" href="filter.php">Filter</a>
+                                </div>
+                                <div class="col-4">
+                                    <a class="btn btn-outline-primary btn-block" href="mail.php">Mail</a>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-4">
+
+                                </div>
+                                <div class="col-4">
+                                    <a class="btn btn-outline-primary btn-block" href="regex.php">RegExp</a>
+                                </div>
+                                <div class="col-4">
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

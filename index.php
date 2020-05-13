@@ -21,64 +21,52 @@
                             </h3>
 
                             <div class="row mb-4">
-                                <div class="col-4">
+                                <div class="col-6 col-sm-4 mb-4">
                                     <a class="btn btn-outline-primary btn-block" href="mysql_connect_example.php">Connect</a>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-6 col-sm-4 mb-4">
+                                    <a class="btn btn-outline-primary btn-block" href="mysql_create_example.php">Create</a>
+                                </div>
+                                <div class="col-6 col-sm-4 mb-4">
                                     <a class="btn btn-outline-primary btn-block" href="mysql_insert_example.php">Insert</a>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-6 col-sm-4 mb-4">
                                     <a class="btn btn-outline-primary btn-block" href="#">Prepared</a>
                                 </div>
                             </div>
-                            <!-- <div class="row mb-4">
-                                <div class="col-4">
-                                    <a class="btn btn-outline-primary btn-block" href="#">Select</a>
-                                </div>
-                                <div class="col-4">
-                                    <a class="btn btn-outline-primary btn-block" href="#">Update</a>
-                                </div>
-                                <div class="col-4">
-                                    <a class="btn btn-outline-primary btn-block" href="#">Delete</a>
-                                </div>
-                            </div> -->
 
                             <h3 class="text-center">
                                 Features
                             </h3>
 
                             <div class="row mb-4">
-                                <div class="col-4">
+                                <div class="col-6 col-sm-4 mb-4">
                                     <a class="btn btn-outline-primary btn-block" href="calculator.php">Calculator</a>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-6 col-sm-4 mb-4">
                                     <a class="btn btn-outline-primary btn-block" href="upload.php">Upload</a>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-6 col-sm-4 mb-4">
                                     <a class="btn btn-outline-primary btn-block" href="cookies.php">Cookies</a>
                                 </div>
-                            </div>
-                            <div class="row mb-4">
-                                <div class="col-4">
+                                <div class="col-6 col-sm-4 mb-4">
                                     <a class="btn btn-outline-primary btn-block" href="session.php">Session</a>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-6 col-sm-4 mb-4">
                                     <a class="btn btn-outline-primary btn-block" href="filter.php">Filter</a>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-6 col-sm-4 mb-4">
                                     <a class="btn btn-outline-primary btn-block" href="mail.php">Mail</a>
                                 </div>
                             </div>
                             <div class="row mb-4">
-                                <div class="col-4">
+                                <div class="col-4"> </div>
 
-                                </div>
                                 <div class="col-4">
                                     <a class="btn btn-outline-primary btn-block" href="regex.php">RegExp</a>
                                 </div>
-                                <div class="col-4">
 
-                                </div>
+                                <div class="col-4"> </div>
                             </div>
                         </div>
                     </div>

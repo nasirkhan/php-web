@@ -33,6 +33,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDatabase">
                         <a class="dropdown-item" href="mysql_connect_example.php">Connect</a>
                         <a class="dropdown-item" href="mysql_create_example.php">Create</a>
+                        <a class="dropdown-item" href="mysql_create_table_example.php">Table</a>
                         <a class="dropdown-item" href="mysql_insert_example.php">Insert</a>
                     </div>
                 </li>

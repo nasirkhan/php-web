@@ -28,6 +28,9 @@
                                     <a class="btn btn-outline-primary btn-block" href="mysql_create_example.php">Create</a>
                                 </div>
                                 <div class="col-6 col-sm-4 mb-4">
+                                    <a class="btn btn-outline-primary btn-block" href="mysql_create_table_example.php">Table</a>
+                                </div>
+                                <div class="col-6 col-sm-4 mb-4">
                                     <a class="btn btn-outline-primary btn-block" href="mysql_insert_example.php">Insert</a>
                                 </div>
                                 <div class="col-6 col-sm-4 mb-4">

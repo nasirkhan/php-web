@@ -33,7 +33,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO my_database (name, email) VALUES ('Nasir Khan', 'nasir8891@gmail.com')";
+$sql = "INSERT INTO users (name, email) VALUES ('Nasir Khan', 'nasir8891@gmail.com')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
@@ -61,7 +61,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO my_database (name, email) VALUES ('Nasir Khan', 'nasir8891@gmail.com')";
+$sql = "INSERT INTO users (name, email) VALUES ('Nasir Khan', 'nasir8891@gmail.com')";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
@@ -87,8 +87,8 @@ try {
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "INSERT INTO my_database (name, email) VALUES ('Nasir Khan', 'nasir8891@gmail.com')";
-    
+    $sql = "INSERT INTO users (name, email) VALUES ('Nasir Khan', 'nasir8891@gmail.com')";
+
     // use exec() because no results are returned
     $conn->exec($sql);
     echo "New record created successfully";
@@ -109,3 +109,8 @@ $conn = null;
     <?php include_once "_footer.php" ?>
 </body>
 </html>
+
+
+<?php
+
+?>

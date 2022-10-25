@@ -36,5 +36,6 @@ https://www.rokomari.com/book/206479/php-web-programming
 আমরা পিএইচপি ভাষা ব্যবহার করে প্রোগ্রামিংয়ের বিভিন্ন দিক জানব। আগে কখনো প্রোগ্রামিং শেখেনি বা খুব সামান্য চর্চা করেছে, এমন ব্যক্তিদের উদ্দেশ্য করে ধারাবাহিকভাবে নতুন নতুন বিষয় নিয়ে আলোচনা করা হবে। পিএইচপি শেখার জন্য আগে থেকে কোনো কিছু শিখে রাখার প্রয়োজন নেই। শেখার শুরুতে আমরা কয়েকটি সফটওয়্যার ইনস্টল করব, তবে সেগুলো কীভাবে কাজ করে তা প্রথমেই জানার প্রয়োজন নেই। ধাপে ধাপে আমরা পিএইচপি শিখতে থাকব এবং কিছুটা দক্ষ হওয়ার পরে ওয়েব-প্রযুক্তির অন্যান্য নানা দিক, সিএমএস ও ফ্রেমওয়ার্ক ইত্যাদি সম্পর্কে জানব।
 
 
+
 PHP Web Programming Book by Nasir Khan Saikat
-Read More details at: https://nasirkhn.com/php
+Read More details at: [https://nasirkhn.com/books/php-web-programming-book](https://nasirkhn.com/books/php-web-programming-book)
